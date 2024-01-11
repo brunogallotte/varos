@@ -3,6 +3,7 @@ import { Red_Hat_Display } from 'next/font/google'
 
 import './globals.css'
 import { Header } from '../components/Header'
+import { Footer } from '@/components/Footer'
 
 const mainFontFamily = Red_Hat_Display({
   weight: ['400', '700', '800'],
@@ -27,6 +28,8 @@ export default function RootLayout({
           <Header />
 
           <main>{children}</main>
+
+          <Footer />
         </div>
       </body>
     </html>
