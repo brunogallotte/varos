@@ -16,9 +16,11 @@ const config: Config = {
         greyPaletteC1: '#F2F4F8',
         greyPaletteC2: '#E2E5EB',
         greyPaletteC5: '#B0B7BE',
+        greyPaletteC7: '#4D5358',
         greyPaletteC8: '#222729',
         greyPaletteC9: '#131516',
         greenPaletteC1: '#00F700',
+        turquoisePaletteC2: '#00F0C9',
       },
       fontFamily: {
         sans: ['var(--font-family-main)'],
@@ -27,14 +29,27 @@ const config: Config = {
         title: '4rem',
       },
       spacing: {
+        '13': '3.1875rem',
         '19': '4.5rem',
         '65': '16.4375rem',
+        '75': '16.875rem',
+        '77': '18.1875rem',
         '99': '29.3125rem',
+        '101': '33.1875rem',
         intro: '35.25rem',
         '8xl': '81rem',
       },
       borderRadius: {
         '12': '3rem',
+      },
+      keyframes: {
+        infiniteCarousel: {
+          '0%': { transform: 'translateX(-200%)' },
+          '100%': { transform: 'translateX(200%)' },
+        },
+      },
+      animation: {
+        'infinite-carousel': 'infiniteCarousel 30s linear infinite',
       },
     },
   },

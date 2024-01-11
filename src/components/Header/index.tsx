@@ -9,10 +9,10 @@ export function Header() {
       <div className="gap-19 flex w-full items-center text-sm">
         <Image src={logo} alt="Varos" className="h-3.5 w-20" />
         <nav className="flex gap-20">
-          <a href="#">produtos</a>
-          <a href="#">blog</a>
-          <a href="#">conteúdos</a>
-          <a href="#">quem somos</a>
+          <a href="#">Produtos</a>
+          <a href="#">Blog</a>
+          <a href="#">Conteúdos</a>
+          <a href="#">Quem somos</a>
         </nav>
       </div>
       <div className="flex text-lg">
