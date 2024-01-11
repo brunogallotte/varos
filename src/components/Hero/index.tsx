@@ -13,7 +13,7 @@ import { Card } from './components/Card'
 export function Hero() {
   return (
     <section className="max-w-8xl mx-auto flex w-full items-center gap-40 py-40">
-      <div className="max-w-intro h-101 flex flex-col">
+      <div className="max-w-102 h-101 flex flex-col">
         <h2 className="text-title/[70.4px] mb-6 font-extrabold text-greyPaletteC1">
           Investir de forma mais inteligente passa por aqui.
         </h2>
