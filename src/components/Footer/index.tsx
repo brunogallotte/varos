@@ -20,7 +20,7 @@ export function Footer() {
             <span>Todos os direitos reservados</span>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex gap-6">
           <nav className="flex w-44 flex-col gap-6">
             <strong>Cursos</strong>
             <a href="#">Valuation do Zero ao Avançado 2.0</a>
