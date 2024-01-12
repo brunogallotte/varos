@@ -12,16 +12,16 @@ import { Card } from './components/Card'
 
 export function Hero() {
   return (
-    <section className="max-w-8xl mx-auto flex w-full items-center gap-40 py-40">
-      <div className="max-w-102 h-101 flex flex-col">
-        <h2 className="text-title/[70.4px] mb-6 font-extrabold text-greyPaletteC1">
+    <section className="mx-auto flex w-full max-w-8xl items-center gap-40">
+      <div className="flex h-101 max-w-102 flex-col">
+        <h2 className="mb-6 text-title/[70.4px] font-extrabold text-greyPaletteC1">
           Investir de forma mais inteligente passa por aqui.
         </h2>
-        <span className="w-99 mb-8 text-lg/[21.6px] text-greyPaletteC2">
+        <span className="mb-8 w-99 text-lg/[21.6px] text-greyPaletteC2">
           Fazemos de tudo para que você possa conquistar seus sonhos da melhor
           forma possível.
         </span>
-        <button className="rounded-12 text-greenPaletteC1 w-65 flex items-center justify-center gap-2.5 bg-varosPrincipalGreen/[0.4] px-12 py-4">
+        <button className="flex w-65 items-center justify-center gap-2.5 rounded-12 bg-varosPrincipalGreen/[0.4] px-12 py-4 text-greenPaletteC1">
           Comprar agora
           <Image src={arrowIcon} alt="" />
         </button>

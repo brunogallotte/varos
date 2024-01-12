@@ -4,9 +4,9 @@ import logoText from '../../assets/images/logo.svg'
 
 export function Footer() {
   return (
-    <footer className="max-w-8xl h-100 mx-auto">
+    <footer className="mx-auto h-100 max-w-8xl">
       <div className="flex h-full gap-6 text-greyPaletteC1">
-        <div className="w-75 flex flex-col justify-between">
+        <div className="flex w-75 flex-col justify-between">
           <div className="flex flex-col gap-4">
             <Image
               src={logoFooter}
