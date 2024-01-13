@@ -4,8 +4,8 @@ import logoText from '../../assets/images/logo.svg'
 
 export function Footer() {
   return (
-    <footer className="max-w-9/10 mx-auto pb-8 md:h-102 md:pb-0 lg:h-100 lg:max-w-8xl">
-      <div className="h-full justify-center gap-6 text-greyPaletteC1 lg:flex">
+    <footer className="lg:max-w-9/10 max-w-9/10 mx-auto pb-8 md:h-102 md:pb-0 lg:h-100 xl:max-w-8xl">
+      <div className="h-full justify-between gap-6 text-greyPaletteC1 lg:flex">
         <div className="w-75 flex-col justify-between lg:flex">
           <div className="flex flex-col gap-4 pb-10 lg:gap-4">
             <Image

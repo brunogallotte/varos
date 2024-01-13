@@ -26,7 +26,7 @@ export function Form() {
   }
 
   return (
-    <section className="max-w-9/10 mx-auto pb-32 pt-32 md:pt-0 lg:max-w-8xl">
+    <section className="lg:max-w-9/10 max-w-9/10 mx-auto pb-32 pt-32 md:pt-0 xl:max-w-8xl">
       <div className="flex flex-col justify-between md:flex-row">
         <div className="mb-10 flex flex-col gap-2 md:mb-0 md:w-98">
           <h4 className="text-center text-4xl font-bold text-greyPaletteC1 md:text-start">
