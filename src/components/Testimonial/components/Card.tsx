@@ -11,7 +11,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 export function Card({ author, content, ...props }: CardProps) {
   return (
     <div {...props}>
-      <div className="w-79 h-77.5 relative flex flex-col justify-center rounded-3xl border border-greyPaletteC8 bg-greyPaletteC9 p-8">
+      <div className="relative flex h-77.5 w-79 flex-col justify-center rounded-3xl border border-greyPaletteC8 bg-greyPaletteC9 p-8">
         <p className="pl-6 text-lg/[21.6px] font-medium text-greyPaletteC5">
           {content}
         </p>

@@ -15,7 +15,7 @@ export function Card({ title, icon, width, titleSufix }: CardProps) {
       <Image
         src={icon}
         alt=""
-        className="border-greyPaletteC7 w-13 h-12 rounded-lg border bg-varosPrincipalDark px-3 py-3"
+        className="h-12 w-13 rounded-lg border border-greyPaletteC7 bg-varosPrincipalDark px-3 py-3"
       />
       <span className="tracking-widest text-white">
         {titleSufix ? (

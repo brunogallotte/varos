@@ -26,7 +26,7 @@ export function Form() {
   }
 
   return (
-    <section className="lg:max-w-9/10 max-w-9/10 mx-auto pb-32 pt-32 md:pt-0 xl:max-w-8xl">
+    <section className="mx-auto max-w-9/10 pb-32 pt-32 md:pt-0 lg:max-w-9/10 xl:max-w-8xl">
       <div className="flex flex-col justify-between md:flex-row">
         <div className="mb-10 flex flex-col gap-2 md:mb-0 md:w-98">
           <h4 className="text-center text-4xl font-bold text-greyPaletteC1 md:text-start">
@@ -38,7 +38,7 @@ export function Form() {
         </div>
         <form
           onSubmit={handleSubmit(handleSubmitMessage)}
-          className="md:w-81 flex flex-col gap-6 rounded-10 border border-greyPaletteC7 bg-greyPaletteC9 p-14 lg:w-102"
+          className="flex flex-col gap-6 rounded-10 border border-greyPaletteC7 bg-greyPaletteC9 p-14 md:w-81 lg:w-102"
         >
           <input
             className="rounded border border-greyPaletteC7 bg-greyPaletteC8 px-6 py-3 text-lg text-greyPaletteC6"

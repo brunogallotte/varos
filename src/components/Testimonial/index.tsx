@@ -7,7 +7,7 @@ import { testimonialsData } from '@/data/selects'
 
 export function Testimonial() {
   return (
-    <section className="lg:max-w-9/10 max-w-9/10 mx-auto mt-20 flex flex-col gap-4 md:flex-row md:pb-24 md:pt-24 lg:mt-0 lg:justify-between lg:gap-20 lg:pb-21 xl:max-w-8xl">
+    <section className="mx-auto mt-20 flex max-w-9/10 flex-col gap-4 md:flex-row md:pb-24 md:pt-24 lg:mt-0 lg:max-w-9/10 lg:justify-between lg:gap-20 lg:pb-21 xl:max-w-8xl">
       <div className="mb-6 flex flex-col gap-10 md:mb-0 md:h-102 md:w-100 md:gap-20">
         <div className="gap-2">
           <h4 className="mb-2 text-4xl font-bold text-greyPaletteC1">

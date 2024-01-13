@@ -6,7 +6,7 @@ import { ShowSelectPortal } from './components/ShowSelectPortal'
 
 export function SelectSection() {
   return (
-    <section className="max-w-9/10 lg:max-w-9/10 mx-auto md:pb-24 md:pt-24 lg:pb-52 lg:pt-64 xl:max-w-8xl">
+    <section className="mx-auto max-w-9/10 md:pb-24 md:pt-24 lg:max-w-9/10 lg:pb-52 lg:pt-64 xl:max-w-8xl">
       <div className="flex w-full flex-col gap-4">
         <h3 className="text-center text-4xl font-bold text-greyPaletteC1 md:w-103 md:text-start">
           Simplifique seus investimentos e alcance seus objetivos

@@ -5,7 +5,7 @@ import arrowRigth from '../../assets/icons/arrowRight2.svg'
 export function MobileMenu() {
   return (
     <div className="static z-40 mx-auto flex h-lvh w-full border-greyPaletteC8 bg-varosPrincipalDark">
-      <div className="max-w-9/10 mx-auto w-full">
+      <div className="mx-auto w-full max-w-9/10">
         <div className="flex w-full flex-col gap-6">
           <button className="flex w-full items-center justify-center gap-4 rounded border border-varosPrincipalDoc bg-varosPrincipalDark p-2.5 text-lg font-medium uppercase text-varosPrincipalDoc">
             <Image src={userIcon} alt="" />

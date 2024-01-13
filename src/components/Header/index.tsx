@@ -5,20 +5,17 @@ import logo from '../../assets/images/logo.svg'
 import cartIcon from '../../assets/icons/cartIcon.svg'
 import userIcon from '../../assets/icons/userIcon.svg'
 import hamburguerIcon from '../../assets/icons/hamburguerIcon.svg'
-import { useState } from 'react'
-import { MenuToggleMobile } from './components/MenuMobileToggle'
-import { MobileMenu } from '../MobileMenu'
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  // const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  function toggleMenuIsOpen(state: boolean) {
-    setIsMenuOpen(state)
-  }
+  // function toggleMenuIsOpen(state: boolean) {
+  //   setIsMenuOpen(state)
+  // }
 
   return (
     <div>
-      <div className="max-w-9/10 lg:max-w-9/10 mx-auto flex gap-44 py-10 text-varosPrincipalDoc md:h-20 md:py-2.5 xl:max-w-8xl">
+      <div className="mx-auto flex max-w-9/10 gap-44 py-10 text-varosPrincipalDoc md:h-20 md:py-2.5 lg:max-w-9/10 xl:max-w-8xl">
         <div className="flex w-full items-center gap-19 text-sm">
           <Image src={logo} alt="Varos" className="h-10 w-24" />
           <nav className="hidden gap-20 lg:flex">

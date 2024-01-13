@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Red_Hat_Display } from 'next/font/google'
+import { Red_Hat_Display as redHatDisplay } from 'next/font/google'
 
 import './globals.css'
 import { Header } from '../components/Header'
 import { Footer } from '@/components/Footer'
 
-const mainFontFamily = Red_Hat_Display({
+const mainFontFamily = redHatDisplay({
   weight: ['400', '700', '800'],
   subsets: ['latin'],
   variable: '--font-family-main',
