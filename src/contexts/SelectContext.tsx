@@ -31,8 +31,6 @@ export function SelectProvider({ children }: SelectProviderProps) {
     setItemSelectedInBody(item)
   }
 
-  console.log(itemSelectedInBody)
-
   return (
     <SelectContext.Provider
       value={{ itemSelectedInBody, changeItemSelectedInBody }}

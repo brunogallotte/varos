@@ -1,15 +1,15 @@
 import { SelectItem, SelectItemProps } from './SelectItem'
 
 interface SelectBodyProps {
-  isVisible: boolean
   dataItems: SelectItemProps[]
   category: string
+  isVisible: boolean
 }
 
 export function SelectBody({
-  isVisible,
   dataItems,
   category,
+  isVisible,
 }: SelectBodyProps) {
   const dataItemsFilter = dataItems.filter((item) => {
     if (item.category === category) {
@@ -24,7 +24,12 @@ export function SelectBody({
       className={`mt-4 flex flex-col gap-6 rounded-10 border border-greyPaletteC8 bg-greyPaletteC9 p-8`}
     >
       {dataItemsFilter.map((item) => (
-        <SelectItem key={item.title} title={item.title} icon={item.icon} />
+        <SelectItem
+          key={item.title}
+          title={item.title}
+          icon={item.icon}
+          variant="dropdown"
+        />
       ))}
     </div>
   ) : null

@@ -12,12 +12,12 @@ import { Card } from './components/Card'
 
 export function Hero() {
   return (
-    <section className="mx-auto flex w-full max-w-8xl items-center gap-40">
-      <div className="flex h-101 max-w-102 flex-col">
-        <h2 className="mb-6 text-title/[70.4px] font-extrabold text-greyPaletteC1">
+    <section className="max-w-9/10 mx-auto mt-10 flex w-full pb-40 md:mt-40 md:pb-0 lg:max-w-8xl lg:items-center xl:gap-64">
+      <div className="md:max-w-81 flex w-full flex-col items-center md:h-101 md:items-start lg:max-w-102">
+        <h2 className="mb-6 text-center text-4xl font-extrabold text-greyPaletteC1 md:text-start md:text-5xl lg:text-title/[70.4px]">
           Investir de forma mais inteligente passa por aqui.
         </h2>
-        <span className="mb-8 w-99 text-lg/[21.6px] text-greyPaletteC2">
+        <span className="mb-8 text-center text-lg/[21.6px] text-greyPaletteC2 md:w-80 md:text-start lg:w-99">
           Fazemos de tudo para que você possa conquistar seus sonhos da melhor
           forma possível.
         </span>
@@ -28,7 +28,7 @@ export function Hero() {
         <SliderComponent />
       </div>
 
-      <div className="flex w-80 flex-col gap-10">
+      <div className="hidden w-80 flex-col gap-10 md:flex lg:flex">
         <div className="relative z-10 flex h-24 items-center">
           <Card icon={fatorIcon} title="Carteira Fator" width="w-75" />
           <Image src={glow1} alt="" className="absolute right-0" />

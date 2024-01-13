@@ -5,17 +5,18 @@ import neoFeedLogo from '../../../assets/images/valorLogo.svg'
 import valorLogo from '../../../assets/images/neoFeed.svg'
 import bmNewsLogo from '../../../assets/images/bmNews.svg'
 import Image from 'next/image'
+import { Bar } from '@/components/Bar'
 
 export function SliderComponent() {
   return (
-    <div className="relative mt-auto">
-      <div className="border-greyPaletteC7 flex w-full gap-10 overflow-hidden rounded-3xl border p-6">
+    <div className="relative mt-20 w-full md:mt-auto">
+      <Bar>
         <span className="whitespace-nowrap text-xl text-greyPaletteC5">
           visto em
         </span>
 
         <div className="w-full overflow-hidden">
-          <div className="animate-infinite-carousel flex gap-20">
+          <div className="flex animate-infinite-carousel gap-20">
             <Image src={bradvisorsLogo} alt="" />
             <Image src={fLogo} alt="" />
             <Image src={valorLogo} alt="" />
@@ -24,8 +25,8 @@ export function SliderComponent() {
             <Image src={neoFeedLogo} alt="" />
           </div>
         </div>
-      </div>
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent to-varosPrincipalDark"></div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent to-varosPrincipalDark" />
+      </Bar>
     </div>
   )
 }

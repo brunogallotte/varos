@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import { useAutoAnimate } from '@formkit/auto-animate/react'
-import chevronDownIcon from '../../../../assets/icons/chrevonDown.svg'
-
 import { useState } from 'react'
 import { SelectBody } from './components/SelectBody'
 import { SelectItemProps } from './components/SelectItem'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
+
+import chevronDownIcon from '../../../../assets/icons/chrevonDown.svg'
 
 interface SelectProps {
   title: string
@@ -17,20 +17,14 @@ export function Select({ dataItems, title, category }: SelectProps) {
   const [parent] = useAutoAnimate()
 
   function handleSelectMenuIsVisible() {
-    if (selectMenuIsVisible) {
-      setSelectMenuIsVisible(!selectMenuIsVisible)
-    } else {
-      setSelectMenuIsVisible(!selectMenuIsVisible)
-    }
+    setSelectMenuIsVisible(!selectMenuIsVisible)
   }
 
   return (
-    <div className="w-75" ref={parent}>
+    <div className="md:w-77" ref={parent}>
       <button
         type="button"
-        className={`flex w-full items-center justify-center gap-2.5 rounded-10 bg-greyPaletteC8 px-8 py-4 text-lg ${
-          selectMenuIsVisible ? 'font-bold' : ''
-        } text-greyPaletteC1`}
+        className="flex w-full items-center justify-center gap-2.5 rounded-10 bg-greyPaletteC8 px-8 py-4 text-lg text-greyPaletteC1"
         onClick={handleSelectMenuIsVisible}
       >
         <span className="tracking-widest">{title}</span>
@@ -38,8 +32,8 @@ export function Select({ dataItems, title, category }: SelectProps) {
       </button>
       <SelectBody
         dataItems={dataItems}
-        isVisible={selectMenuIsVisible}
         category={category}
+        isVisible={selectMenuIsVisible}
       />
     </div>
   )
