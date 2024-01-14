@@ -4,20 +4,31 @@ import Image from 'next/image'
 import logo from '../../assets/images/logo.svg'
 import cartIcon from '../../assets/icons/cartIcon.svg'
 import userIcon from '../../assets/icons/userIcon.svg'
-import hamburguerIcon from '../../assets/icons/hamburguerIcon.svg'
+import Link from 'next/link'
+import Hamburger from 'hamburger-react'
+import { useState } from 'react'
 
 export function Header() {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  // function toggleMenuIsOpen(state: boolean) {
-  //   setIsMenuOpen(state)
-  // }
+  function handleIsMenuOpen() {
+    if (isMenuOpen) {
+      setIsMenuOpen(!isMenuOpen)
+    }
+  }
 
   return (
     <div>
-      <div className="mx-auto flex max-w-9/10 gap-44 py-10 text-varosPrincipalDoc md:h-20 md:py-2.5 lg:max-w-9/10 xl:max-w-8xl">
+      <div className="mx-auto flex max-w-9/10 gap-44 py-10 text-varosPrincipalDoc md:h-20 md:py-2.5 lg:max-w-9/10 lg:gap-20 xl:max-w-8xl">
         <div className="flex w-full items-center gap-19 text-sm">
-          <Image src={logo} alt="Varos" className="h-10 w-24" />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Varos"
+              className="h-10 w-24"
+              onClick={handleIsMenuOpen}
+            />
+          </Link>
           <nav className="hidden gap-20 lg:flex">
             <a href="#">Produtos</a>
             <a href="#">Blog</a>
@@ -36,7 +47,12 @@ export function Header() {
           </button>
         </div>
         {/* <MenuToggleMobile toggleMenuIsOpen={toggleMenuIsOpen} /> */}
-        <Image className="flex lg:hidden" src={hamburguerIcon} alt="" />
+        <Link
+          className="flex items-center lg:hidden"
+          href={!isMenuOpen ? '/menu' : '/'}
+        >
+          <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} />
+        </Link>
       </div>
     </div>
   )

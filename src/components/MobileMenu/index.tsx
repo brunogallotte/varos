@@ -1,10 +1,19 @@
+'use client'
+
 import Image from 'next/image'
 import userIcon from '../../assets/icons/userIcon.svg'
 import arrowRigth from '../../assets/icons/arrowRight2.svg'
+import { motion } from 'framer-motion'
 
 export function MobileMenu() {
   return (
-    <div className="static z-40 mx-auto flex h-lvh w-full border-greyPaletteC8 bg-varosPrincipalDark">
+    <motion.div
+      className="mx-auto flex w-full border-greyPaletteC8 bg-varosPrincipalDark"
+      initial={{ translateY: -80, opacity: 0 }}
+      animate={{ translateY: 0, opacity: 1 }}
+      exit={{ scaleY: 0 }}
+      transition={{ durantion: 1, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="mx-auto w-full max-w-9/10">
         <div className="flex w-full flex-col gap-6">
           <button className="flex w-full items-center justify-center gap-4 rounded border border-varosPrincipalDoc bg-varosPrincipalDark p-2.5 text-lg font-medium uppercase text-varosPrincipalDoc">
@@ -65,6 +74,6 @@ export function MobileMenu() {
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

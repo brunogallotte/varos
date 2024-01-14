@@ -36,7 +36,7 @@ export function Testimonial() {
 
         <Bar className="md:w-[414px] lg:w-full">
           <div className="z-20 flex w-full items-center gap-4 lg:justify-around">
-            <div className=" flex w-20.5 flex-col">
+            <div className="flex w-20.5 flex-col items-center text-center">
               <span className="font-bold tracking-widest text-greyPaletteC4 lg:text-lg">
                 + 1000
               </span>
@@ -44,18 +44,16 @@ export function Testimonial() {
                 Nota média geral das aulas
               </span>
             </div>
-            <div className="w-20.5">
-              <span className="block text-lg font-bold tracking-widest text-varosPrincipalGreen">
+            <div className="flex w-20.5 flex-col items-center text-center">
+              <span className="text-lg font-bold tracking-widest text-varosPrincipalGreen">
                 4,8/5
               </span>
               <span className="text-sm text-varosPrincipalDoc md:text-sm">
                 Nota média geral das aulas
               </span>
             </div>
-            <div className="w-20.5">
-              <span className="block text-lg font-bold text-greyPaletteC4">
-                10k+
-              </span>
+            <div className="flex w-20.5 flex-col items-center text-center">
+              <span className="text-lg font-bold text-greyPaletteC4">10k+</span>
               <span className="text-sm text-varosPrincipalDoc md:text-sm">
                 Comunidade
               </span>

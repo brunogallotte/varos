@@ -3,6 +3,7 @@
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as zod from 'zod'
+import { api } from '@/lib/axios'
 
 const newMessageFormValidationSchema = zod.object({
   name: zod.string().min(1, 'Informe o seu nome'),
@@ -16,13 +17,34 @@ export function Form() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { isSubmitting },
   } = useForm<NewMessageFormData>({
     resolver: zodResolver(newMessageFormValidationSchema),
   })
 
-  function handleSubmitMessage(data: NewMessageFormData) {
-    console.log(data)
+  async function handleSubmitMessage(data: NewMessageFormData) {
+    try {
+      const response = await api.post(
+        '/api/process-form',
+        {
+          name: data.name,
+          mail: data.mail,
+          cel: data.cel,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        },
+      )
+
+      console.log('Resposta da API: ', response.data)
+
+      reset()
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
@@ -53,7 +75,7 @@ export function Form() {
             {...register('mail')}
           />
           <input
-            className="tet-greyPaletteC6 rounded border border-greyPaletteC7 bg-greyPaletteC8 px-6 py-3 text-lg"
+            className="tet-greyPaletteC6 rounded border border-greyPaletteC7 bg-greyPaletteC8 px-6 py-3 text-lg text-greyPaletteC6"
             type="text"
             placeholder="Celular"
             {...register('cel')}

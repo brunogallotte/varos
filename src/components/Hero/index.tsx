@@ -12,7 +12,7 @@ import { Card } from './components/Card'
 
 export function Hero() {
   return (
-    <section className="mx-auto mt-10 flex w-full max-w-9/10 pb-40 pt-32 md:mt-40 md:pb-0 md:pt-0 lg:max-w-9/10 lg:items-center xl:max-w-8xl xl:gap-64">
+    <section className="mx-auto flex w-full max-w-9/10 pb-40 pt-16 md:mt-40 md:pb-0 md:pt-0 lg:max-w-9/10 lg:items-center xl:max-w-8xl xl:gap-64">
       <div className="flex w-full flex-col items-center md:h-101 md:max-w-81 md:items-start lg:max-w-102">
         <h2 className="mb-6 text-center text-4xl font-extrabold text-greyPaletteC1 md:text-start md:text-5xl lg:text-title/[70.4px]">
           Investir de forma mais inteligente passa por aqui.
