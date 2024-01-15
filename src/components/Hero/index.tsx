@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Card } from './components/Card'
 
 import arrowIcon from '../../assets/icons/arrowRight.svg'
 import fatorIcon from '../../assets/icons/fatorIcon.svg'
@@ -8,7 +9,6 @@ import glow1 from '../../assets/images/glow1.png'
 import glow2 from '../../assets/images/glow2.png'
 import glow3 from '../../assets/images/glow3.png'
 import { SliderComponent } from './components/Slider'
-import { Card } from './components/Card'
 
 export function Hero() {
   return (

@@ -59,15 +59,6 @@ const config: Config = {
         '10': '2rem',
         '12': '3rem',
       },
-      keyframes: {
-        infiniteCarousel: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(calc(0px - 50% - 25px))' },
-        },
-      },
-      animation: {
-        'infinite-carousel': 'infiniteCarousel 30s linear infinite',
-      },
     },
   },
   plugins: [],

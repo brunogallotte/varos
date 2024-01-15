@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    # Varos Processo Seletivo
+</h1>
 
-## Getting Started
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-First, run the development server:
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=15C3D6&labelColor=000000" alt="PRs welcome!" />
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <img alt="Varos Processo Seletivo" src="https://imgur.com/WhxLQS3" width="100%">
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Tecnologias
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-## Learn More
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Projeto de desafio técnico, etapa de processo seletivo para empresa <a href="https://www.linkedin.com/company/varos-brasil/">Varos</a>. Eram obrigatórios Typescript e TailwindCSS, Next.js era opcional ao mesmo tempo que desejável.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Estrutura de pastas pensada na possibilidade de escalonar o projeto posteriormente. 
 
-## Deploy on Vercel
+Para facilitar a manutenção e reutilização, componentes maiores foram quebrados em componentes menores; os dados estáticos foram alocados na pasta "data"; na pasta lib separamos a baseURL, optando pelo uso do axios, haja vista a possível necessidade de realizar mais requisições no futuro; optou-se por controlar o formulário de contato com React-Hook-Form, junto com Zod para validação, pois há uma integração eficiente com Typescript.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## 🔖 Layout
+
+Nos links abaixo você encontra o layout do projeto web.
+
+- [Vercel](https://varos-selective.vercel.app/)
+

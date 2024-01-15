@@ -1,9 +1,10 @@
 'use client'
 
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+
 import userIcon from '../../assets/icons/userIcon.svg'
 import arrowRigth from '../../assets/icons/arrowRight2.svg'
-import { motion } from 'framer-motion'
 
 export function MobileMenu() {
   return (

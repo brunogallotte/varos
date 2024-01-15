@@ -1,4 +1,5 @@
 'use client'
+import { useState } from 'react'
 
 import Image from 'next/image'
 import logo from '../../assets/images/logo.svg'
@@ -6,7 +7,6 @@ import cartIcon from '../../assets/icons/cartIcon.svg'
 import userIcon from '../../assets/icons/userIcon.svg'
 import Link from 'next/link'
 import Hamburger from 'hamburger-react'
-import { useState } from 'react'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import { useContext } from 'react'
+
 import { SelectItem } from '../Select/components/SelectItem'
 import graphicImage from '../../../../assets/images/graphicImage.png'
 import glow from '../../../../assets/images/Glow4.png'
-import { useContext } from 'react'
 import { SelectContext } from '@/contexts/SelectContext'
 import { dataSelects } from '@/data/selects'
 
