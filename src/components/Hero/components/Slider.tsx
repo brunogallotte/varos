@@ -15,14 +15,17 @@ export function SliderComponent() {
           visto em
         </span>
 
-        <div className="w-full overflow-hidden">
+        <div className="flex w-full overflow-hidden">
           <div className="flex animate-infinite-carousel gap-20">
-            <Image src={bradvisorsLogo} alt="" />
-            <Image src={fLogo} alt="" />
-            <Image src={valorLogo} alt="" />
-            <Image src={tcLogo} alt="" />
-            <Image src={bmNewsLogo} alt="" />
-            <Image src={neoFeedLogo} alt="" />
+            <Image className="h-auto w-auto" src={bradvisorsLogo} alt="" />
+            <Image className="h-auto w-auto" src={fLogo} alt="" />
+            <Image className="h-auto w-auto" src={valorLogo} alt="" />
+            <Image className="h-auto w-auto" src={tcLogo} alt="" />
+            <Image className="h-auto w-auto" src={bmNewsLogo} alt="" />
+            <Image className="h-auto w-auto" src={neoFeedLogo} alt="" />
+            <Image className="h-auto w-auto" src={bradvisorsLogo} alt="" />
+            <Image className="h-auto w-auto" src={fLogo} alt="" />
+            <Image className="h-auto w-auto" src={valorLogo} alt="" />
           </div>
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent to-varosPrincipalDark" />
