@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img alt="Varos Processo Seletivo" src="https://imgur.com/WhxLQS3" width="100%">
+  <img alt="Varos Processo Seletivo" src="https://github.com/brunogallotte/varos/assets/131268925/2a0acdea-4890-467b-a029-9459f6d8729d" width="100%">
 </p>
 
 ## 🚀 Tecnologias
