@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Bar } from '../Bar'
 import { Card } from './components/Card'
 import { testimonialsData } from '@/data/selects'
+import Marquee from 'react-fast-marquee'
 
 export function Testimonial() {
   return (
@@ -17,19 +18,22 @@ export function Testimonial() {
             Garantindo seu aprendizado
           </span>
         </div>
-        <div className="relative flex max-w-full overflow-hidden md:max-w-[325px] lg:max-w-full lg:gap-6">
+        <Marquee
+          gradient={true}
+          gradientColor="#131313"
+          className="relative flex max-w-full overflow-hidden md:max-w-[325px] lg:max-w-full lg:gap-6"
+        >
           {testimonialsData.map((item) => {
             return (
               <Card
                 key={item.content}
                 content={item.content}
                 author={item.author}
-                className="animate-infinite-carousel"
+                className="mr-8"
               />
             )
           })}
-          <div className="absolute inset-0 z-10 w-full bg-gradient-to-r from-transparent to-varosPrincipalDark" />
-        </div>
+        </Marquee>
       </div>
       <div className="relative flex flex-col overflow-hidden md:gap-20">
         <Image className="z-20" src={testimonialImage} alt="" />

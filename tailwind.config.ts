@@ -61,12 +61,12 @@ const config: Config = {
       },
       keyframes: {
         infiniteCarousel: {
-          '0%': { transform: 'translateX(-180%)' },
-          '100%': { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(0px - 50% - 25px))' },
         },
       },
       animation: {
-        'infinite-carousel': 'infiniteCarousel 25s linear infinite',
+        'infinite-carousel': 'infiniteCarousel 30s linear infinite',
       },
     },
   },
