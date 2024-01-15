@@ -21,7 +21,7 @@ export function Header() {
     <div>
       <div className="mx-auto flex max-w-9/10 gap-44 py-10 text-varosPrincipalDoc md:h-20 md:py-2.5 lg:max-w-9/10 lg:gap-20 xl:max-w-8xl">
         <div className="flex w-full items-center gap-19 text-sm">
-          <Link href="/">
+          <Link className="flex-shrink-0" href="/">
             <Image
               src={logo}
               alt="Varos"
